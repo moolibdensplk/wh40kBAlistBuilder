@@ -212,7 +212,7 @@ void listBuilderWindow::validateList() {
             this->setListValidated(false);
         } else {
             //qDebug() << "[DEBUG]: validate() failedChecks = " << failedChecks;
-            qDebug() << "[DEBUG]: validate() failedChecks size = " << failedChecks.size();
+            //qDebug() << "[DEBUG]: validate() failedChecks size = " << failedChecks.size();
             ui->validationLabel->setStyleSheet("QLabel { background-color : green; color : white; }");
             ui->validationLabel->setText("LIST VALIDATED. OK TO EXPORT AS PDF NOW !");
 
