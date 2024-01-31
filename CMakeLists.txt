@@ -115,8 +115,9 @@ install(TARGETS wh40kBAlistBuilder
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-set(CPACK_GENERATOR "TBZ2")
-set(CPACK_SOURCE_GENERATOR "TBZ2")
+set(CPACK_GENERATOR "ZIP")
+set(CPACK_SOURCE_GENERATOR "ZIP")
+set(PROJECT_BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(CPACK_PACKAGE_DIRECTORY ${PROJECT_BINARY_DIR}/package)
 
 set(CPACK_SOURCE_IGNORE_FILES .git/ .github/ .vscode/ .mypy_cache/ _CPack_Packages/
@@ -125,3 +126,4 @@ set(CPACK_SOURCE_IGNORE_FILES .git/ .github/ .vscode/ .mypy_cache/ _CPack_Packag
 
 
 include(CPack)
+
